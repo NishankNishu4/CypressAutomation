@@ -1,0 +1,24 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run",
+    "specFile": "npm run test -- --spec cypress\\integration\\examples\\*.js --browser chrome --headed",
+    "cypressDashboard": "npm run test -- --record --key 719a3870-1e3c-4d7c-9abf-d522247114b5 --spec cypress\\integration\\examples\\ShopMobile.js",
+    "featureFile": "npm run test -- --spec cypress\\integration\\examples\\BDD\\ShopMobile.feature --browser chrome --headed",
+    "featureFileMagneto": "npm run test -- --spec cypress\\integration\\examples\\ParaSoftBank\\CreateAccount.feature --browser chrome --headed",
+    "tagRun": "npm run test --env tags='@Regression' --browser chrome --headed"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.14.0"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.2",
+    "@cypress/browserify-preprocessor": "latest",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  }
+}

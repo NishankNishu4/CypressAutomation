@@ -1,0 +1,7 @@
+{
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "gender": "Male",
+    "status": "Student",
+    "dob": "1990-05-15"
+}
